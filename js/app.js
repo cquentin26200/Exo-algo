@@ -9,5 +9,9 @@ export const min = (entry) => {
 }
 
 export const average = (entry) => {
-
+    let sum = 0;
+    for (let i = 0; i < entry.length; i++) {
+        sum += (Math.round(entry[i] / entry.length));
+    }
+    return sum;
 }

@@ -1,5 +1,6 @@
 import assert from "assert";
 import { min } from "../js/app.js";
+import { average } from "../js/app.js";
 
 describe("Array", function () {
   describe("#indexOf()", function () {
@@ -23,3 +24,10 @@ describe("Array", function () {
   });
 });
 
+describe("Array", function () {
+    describe("average", function () {
+        it("should return the average with only positive number", function () {
+            assert.equal(average([3, 8, 2, 1, 9]), [5]);
+        })
+    })
+})
