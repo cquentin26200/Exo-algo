@@ -1,0 +1,22 @@
+{
+  "name": "exo-algo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cquentin26200/Exo-algo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cquentin26200/Exo-algo/issues"
+  },
+  "homepage": "https://github.com/cquentin26200/Exo-algo#readme",
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  }
+}
