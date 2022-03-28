@@ -26,3 +26,17 @@ export const checkTheString = (entry) => {
     return newArray;
 }
 
+export const checkPairAndImpair = (entry) => {
+    let newArray = [];
+    let newArray2 = [];
+    let arrayResult = [[newArray], [newArray2]]
+    for (let i = 0; i < entry.length; i++) {
+        if (entry[i] % 2 === 0) {
+            newArray.push(entry[i]);
+        } else {
+            newArray2.push(entry[i]);
+        }
+    }
+    console.log(arrayResult);
+    return arrayResult
+}
