@@ -1,6 +1,7 @@
 import assert from "assert";
 import { min } from "../js/app.js";
 import { average } from "../js/app.js";
+import { checkTheString } from "../js/app.js";
 
 describe("Array", function () {
   describe("#indexOf()", function () {
@@ -28,6 +29,14 @@ describe("Array", function () {
     describe("average", function () {
         it("should return the average with only positive number", function () {
             assert.equal(average([3, 8, 2, 1, 9]), [5]);
+        })
+    })
+})
+
+describe("Array", function () {
+    describe("checkTheString", function () {
+        it("should return the array without the string", function () {
+            assert.deepEqual(checkTheString(["1", "d", "90", "23", "hello"]), [1, 90, 23]);
         })
     })
 })

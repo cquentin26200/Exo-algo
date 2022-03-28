@@ -15,3 +15,14 @@ export const average = (entry) => {
     }
     return sum;
 }
+
+export const checkTheString = (entry) => {
+    let newArray = [];
+    for (let i = 0; i < entry.length; i++) {
+        if (parseInt(entry[i])) {
+            newArray.push(parseInt(entry[i]));
+        }
+    }
+    return newArray;
+}
+
