@@ -37,6 +37,18 @@ export const checkPairAndImpair = (entry) => {
             newArray2.push(entry[i]);
         }
     }
-    console.log(arrayResult);
     return arrayResult
 }
+
+export const returnTheNumberThatAreInTheTwoTable = (entry) => {
+    let newArray = [];
+    for (let arrayOne in entry[0]) {
+        for (let arrayTwo in entry[1]) {
+            if (entry[0][arrayOne] === entry[1][arrayTwo]) {
+                newArray.push(entry[0][arrayOne])
+            }
+        }
+    }
+    return newArray;
+}
+

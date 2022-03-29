@@ -3,6 +3,7 @@ import { min } from "../js/app.js";
 import { average } from "../js/app.js";
 import { checkTheString } from "../js/app.js";
 import { checkPairAndImpair } from "../js/app.js";
+import { returnTheNumberThatAreInTheTwoTable } from "../js/app.js";
 
 describe("Array", function () {
   describe("#indexOf()", function () {
@@ -46,6 +47,14 @@ describe("Array", function () {
   describe("checkPairAndImpair", function () {
       it("should return the array without the pair number", function () {
           assert.deepEqual(checkPairAndImpair([2, 6, 13, 24, 33, 71, 12]), [[[2, 6, 24, 12]], [[13, 33, 71]]]);
+      })
+  })
+})
+
+describe("Array", function () {
+  describe("returnTheNumberThatAreInTheTwoTable", function () {
+      it("should return the array without 2 number that are in the 2 table", function () {
+          assert.deepEqual(returnTheNumberThatAreInTheTwoTable([[1, 5, 7, 3, 98], [1, 5, 8, 12, 34]]), [1, 5]);
       })
   })
 })
