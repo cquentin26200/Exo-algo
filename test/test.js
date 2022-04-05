@@ -4,6 +4,7 @@ import { average } from "../js/app.js";
 import { checkTheString } from "../js/app.js";
 import { checkPairAndImpair } from "../js/app.js";
 import { returnTheNumberThatAreInTheTwoTable } from "../js/app.js";
+import { returnArrayWithoutDuplicateNumberAndLetter } from "../js/app.js";
 
 describe("Array", function () {
   describe("#indexOf()", function () {
@@ -58,3 +59,12 @@ describe("Array", function () {
       })
   })
 })
+
+describe("Array", function () {
+  describe("returnArrayWithoutDuplicateNumberAndLetter", function () {
+      it("should return the array without duplicate number and letter", function () {
+          assert.deepEqual(returnArrayWithoutDuplicateNumberAndLetter([1, 7, 3, 7, 3]), [1, 3, 7]);
+      })
+  })
+})
+
