@@ -57,11 +57,21 @@ export const returnArrayWithoutDuplicateNumberAndLetter = (entry) => {
   let tmp = [];
   for (let i = 0; i < entry.length; i++) {
     tmp[entry[i]] = undefined;
-    console.log(tmp[entry[i]]);
   }
   for (let counter in tmp) {
     newArray.push(counter);
-    console.log(counter);
+  }
+  return newArray;
+};
+
+export const returnArrayWithTheNumberOfOccurence = (entry) => {
+  let newArray = {};
+  for (let count of entry) {
+    if (newArray[count]) {
+      newArray[count]++;
+    } else {
+      newArray[count] = 1;
+    }
   }
   return newArray;
 };
